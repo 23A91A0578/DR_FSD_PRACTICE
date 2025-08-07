@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100svh;
+        }
+        .ball{
+            width: 200px; 
+            height: 200px;
+            border-radius: 50%;
+            background-color: darkred;
+            animation: bounce 2s infinite;
+        }
+        @keyframes bounce{
+            0%{
+                transform: translateY(0px);
+            }
+            50%{
+                transform: translateY(-100px);
+            }
+            75%{
+                transform: translateY(-30px);
+            }
+            100%{
+                transform: translateY(0px);
+            }
+            
+        }
+        .typing{
+            background-color: aqua;
+            color: black;
+            font-family: 'Courier New', Courier, monospace;
+            white-space: nowrap;
+            overflow: hidden;
+            width: 0;
+            animation: typing2 3s steps(10) forwards;
+        }
+        @keyframes typing2 {
+            to{
+                width: 10ch;
+            }
+            
+        }
+    </style>
+
+</head>
+<body>
+    <div class="ball"></div>
+    <div class="typing">Hello World!</div>
+</body>
+</html>

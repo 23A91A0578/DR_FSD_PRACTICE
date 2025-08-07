@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background: linear-gradient( skyblue,antiquewhite);
+        background-attachment: fixed;
+
+    }
+  
+
+
+.road {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #333;
+  border-top: 5px solid white;
+  border-bottom: 5px solid white;
+  overflow: hidden;
+}
+
+.line {
+  height: 10px;
+  width: 100%;
+  background: repeating-linear-gradient(
+    to right,
+    yellow 0,
+    yellow 30px,
+    transparent 30px,
+    transparent 60px
+  );
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  animation: moveLines 1s linear infinite;
+}
+
+@keyframes moveLines {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 60px 0;
+  }
+}
+
+
+    .car{
+        width: 200px;
+        height: 100px;
+        position: absolute;
+        bottom: 130px;
+        animation: forwards;
+        justify-self: start;
+        transition: transform 13s;
+        animation-name: carmove;
+        animation-duration: 13s;
+        z-index: 100;
+        animation-iteration-count: infinite;
+    }
+    .car img{
+        width: 270px;
+        height: 200px;
+       
+    }
+    
+    @keyframes carmove{
+        0%{
+            transform: translateX(0%);
+        }
+        100%{
+            
+            transform: translateX(1300px);
+        }
+    }
+    .tree1{
+        width: 40px;
+        height: 200px;
+        background-color: brown;
+        position: absolute;
+        bottom: 110px;
+        left: 70px;
+    }
+    .tree2{
+        width: 40px;
+        height: 200px;
+        background-color: brown;
+        position: absolute;
+        bottom: 110px;
+        left: 300px;
+        
+    }
+    .branch1{
+        background-color: forestgreen;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        left: 10px;
+        bottom: 100px;
+        position: absolute;
+    }
+    .branch2{
+        background-color: forestgreen;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        left: -30px;
+        bottom: 140px;
+        position: absolute;
+    }
+    .branch3{
+        background-color: forestgreen;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        left: -60px;
+        bottom: 100px;
+        position: absolute;
+    }
+    .cloud1{
+        position: relative;
+        top: 100px;
+        left: 50px;
+        animation-name: cloudmove;
+        transition: transform  20s;
+        animation-duration: 100s;
+        animation-iteration-count: infinite;
+        
+    }
+    @keyframes cloudmove {
+        0%{
+            transform: translateX(0px);
+        }
+        100%{
+            transform: translateX(100%);
+        }
+    }
+    .cir1{
+        width: 70px;
+        height: 70px;
+        background-color: aliceblue;
+        border-radius: 50%;
+        position: absolute;
+        top: 50px;
+        left: 20px;
+    }
+    .cir2{
+         width: 100px;
+        height: 100px;
+        background-color: aliceblue;
+        border-radius: 50%;
+        left: 60px;
+        top: 40px;
+        position: absolute;
+    }
+    .cir3{
+        width: 180px;
+        height: 50px;
+        border-radius: 40px;
+        background: linear-gradient(to bottom,aliceblue,rgb(132, 186, 208));
+        left: 5px;
+        bottom: -140px;
+        position: absolute;
+    }
+    .cloud2{
+        position: relative;
+        left: 300px;
+        animation-name: cloudmove;
+        transition: transform  20s;
+        animation-duration: 100s;
+        animation-iteration-count: infinite;
+    }
+    .sun{
+        background: radial-gradient(yellow,rgb(250, 170, 9));
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        position: relative;
+        left: 1090px;
+        top: 100px;
+        animation-name: sunshadow;
+        animation-duration: 3s;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes sunshadow{
+        0%{
+            box-shadow: 5px 5px 100px rgb(255, 255, 0) ;
+        }
+    }
+    
+    </style>
+<body>
+    <div class="container">
+    
+        <div class="road">
+            <div class="line"></div>
+            </div>
+            <div class="car">
+                <img src="pngtree-white-small-car-wallpaper-png-image_11231719.png" alt="">
+                <div class="wheels"></div>
+                <div class="wheel2"></div>
+            </div>
+        <div class="tree1">
+            <div class="treewood">
+                <div class="branch1"></div>
+                <div class="branch2"></div>
+                <div class="branch3"></div>
+            </div>
+        </div>
+        <div class="tree2">
+            <div class="treewood">
+                <div class="branch1"></div>
+                <div class="branch2"></div>
+                <div class="branch3"></div>
+            </div>
+        </div>
+        <div class="cloud1">
+            <div class="cir1"></div>
+            <div class="cir2"></div>
+            <div class="cir3"></div>
+        </div>
+        <div class="cloud2">
+            <div class="cir1"></div>
+            <div class="cir2"></div>
+            <div class="cir3"></div>
+        </div>
+        <div class="sun"></div>
+    </div>
+</body>
+</html>

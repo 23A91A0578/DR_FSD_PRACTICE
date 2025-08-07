@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>3D White Room</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      perspective: 1000px;
+    }
+
+    .room {
+      position: relative;
+      width: 400px;
+      height: 250px;
+      transform-style: preserve-3d;
+      transform: rotateX(10deg) rotateY(0deg);
+    }
+
+    .wall {
+      position: absolute;
+      background: linear-gradient(to bottom right, #ffffff, #eaeaea);
+    }
+
+    .floor,
+    .ceiling {
+      width: 100%;
+      height: 100%;
+    }
+
+    .floor {
+      transform: rotateX(90deg) translateZ(-125px);
+      background: linear-gradient(to top, #ffffff, #dcdcdc);
+    }
+
+    .ceiling {
+      transform: rotateX(-90deg) translateZ(-125px);
+      background: linear-gradient(to bottom, #f05c5c, #d26b6b);
+    }
+
+    .left-wall, .right-wall {
+      width: 250px;
+      height: 250px;
+    }
+
+    .left-wall {
+      transform: rotateY(90deg) translateZ(-200px);
+      left: 0;
+      background: linear-gradient(to right, #ffffff, #dcdcdc);
+    }
+
+    .right-wall {
+      transform: rotateY(-90deg) translateZ(-200px);
+      right: 0;
+      background: linear-gradient(to left, #ffffff, #dcdcdc);
+    }
+
+    .back-wall {
+      width: 400px;
+      height: 250px;
+      transform: translateZ(-250px);
+      background: linear-gradient(to bottom right, #ffffff, #eaeaea);
+    }
+  </style>
+</head>
+<body>
+  <div class="room">
+    <div class="wall floor"></div>
+    <div class="wall ceiling"></div>
+    <div class="wall left-wall"></div>
+    <div class="wall right-wall"></div>
+    <div class="wall back-wall"></div>
+  </div>
+</body>
+</html>

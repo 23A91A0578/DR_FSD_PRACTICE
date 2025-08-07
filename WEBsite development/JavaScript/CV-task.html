@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun(Gender){
+            console.log("Gender:",Gender);
+        }
+    </script>
+</head>
+<body>
+    <form action="" onchange="">
+        <label for="name">Name :
+        </label>
+        <input type="text" required >
+        <br>
+        <label for="">Phone No :</label>
+        <input type="tel" required>
+        <br>
+        <label for="Gender">Gender :</label>
+        <input type="radio" name="Gender" onchange="fun(Gender)">
+        <label for="gender">Male</label>
+        <input type="radio" name="Gender" onchange="fun(Gender)">
+        <label for="">Female</label>
+        <br>
+        <label for="Email">Email :</label>
+        <input type="email">
+        <br>
+        <input type="submit" >
+        <input type="reset">
+    </form>
+</body>
+</html>

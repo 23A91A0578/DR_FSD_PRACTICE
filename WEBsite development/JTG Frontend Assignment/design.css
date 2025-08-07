@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Exile&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+html{
+    width: 100%;
+    
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  color: #333;
+   width: 100%;
+   padding: 0;
+   margin: 0;
+    border: 5px solid red;
+}
+.header{
+    background-color: white;
+    width: 1005;
+    
+    overflow: hidden;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 2px 2px 10px rgba(66, 66, 66, 0.181);
+    position: sticky;
+}
+.nav{
+    display: flex;
+    align-items: left;
+    
+}
+.nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+    list-style: none;
+    text-decoration: none;
+}
+.nav a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+.nav a:hover{
+    background-color: rgb(255, 174, 24);
+    padding: 7px 15px;
+    border-radius: 6px;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #efeff6;
+}
+.hero{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    flex-wrap: wrap-reverse;
+}
+.hero-content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 70px;
+}
+h1{
+    font-family: 'Inter',sans-serif;
+font-weight: 700;
+
+font-size: 48px;
+line-height: 124%;
+letter-spacing: 0%;
+
+}
+.hero-content h6{
+    font-family: 'Inter',sans-serif;
+font-weight: 400;
+font-size: 16px;
+align-items: center;
+line-height: 24px;
+letter-spacing: 0%;
+text-transform: capitalize;
+color: gray;
+text-wrap: wrap;
+padding-left: 110px;
+}
+.btn{
+    align-self: flex-start;
+    margin-left: 110px;
+    background-color: #FFB400;
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-family: Inter;
+font-weight: 500;
+font-size: 16px;
+width: 154px;
+height: 51px;
+align-items: center;
+display: flex;
+justify-content: center;
+gap: 10px;
+line-height: 100%;
+letter-spacing: 0%;
+text-align: center;
+vertical-align: middle;
+
+}
+.projects{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+
+}
+.projects .description{
+    text-align: center;
+    line-height: 24px;
+}
+.description h2{
+    font-family: 'Inter',sans-serif;
+font-weight: 700;
+font-size: 32px;
+color: black;
+line-height: 124%;
+letter-spacing: 0%;
+text-align: center;
+text-transform: capitalize;
+
+}
+.description p{
+    font-family: 'Inter',sans-serif;
+font-weight: 400;
+font-size: 15px;
+
+line-height: 24px;
+letter-spacing: 0%;
+text-align: center;
+color: gray;
+text-transform: capitalize;
+
+}
+.row1{
+    display: flex;
+    flex-direction: row;
+    gap: 45px;
+    width: 100%;
+    max-width: 1200px;
+}
+.row2{
+    display: flex;
+    flex-direction: row;
+    gap: 45px;
+}
+.project{
+    width: 385px;
+    height: 452.5px;
+    border: 1px solid #ababab;
+    border-radius: 12px;
+    box-shadow: 1px 1px 10px #999999;
+    background-color: white;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+.content{
+    display: flex;
+   padding: 15px;
+   gap: 10px;
+    flex-direction: column;
+}
+.content h6{
+    font-family: 'Inter',sans-serif;
+font-weight: 500;
+font-size: 16px;
+color: black;
+line-height: 124%;
+letter-spacing: 0%;
+text-transform: capitalize;
+
+}
+.content p{
+    font-family: 'Inter',sans-serif;
+font-weight: 400;
+font-size: 14px;
+
+line-height: 24px;
+letter-spacing: 0%;
+text-transform: capitalize;
+
+}
+.buttons{
+    display: flex;
+    flex: row;
+    padding:0px  15px;
+    flex-wrap: wrap;
+    gap: 10px;
+
+
+}
+.buttons button{
+    color: black;
+    border: none;
+    outline: none;
+    width: 70px;
+    text-align: center;
+    height: 26px;
+    border-radius: 10px;
+    font-family: 'Inter',sans-serif;
+font-weight: 400;
+font-style: Regular;
+font-size: 12.5px;
+line-height: 24px;
+letter-spacing: 0%;
+text-transform: capitalize;
+background-color:  #e0e0e0c0;
+}
+.recommendations{
+    margin-top: 50px;
+}
+.carousel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+.review1{
+    width: 340px;
+    height: 327px;
+    background-color: white;
+    padding: 10px;
+}
+.review2{
+    width: 340px;
+    height: 327px;
+    background-color: white;
+    padding: 10px;
+}
+.review3{
+    width: 340px;
+    height: 327px;
+    background-color: white;
+    padding: 10px;
+}
+
+ .carousel-container {
+      position: relative;
+      width: 100%;
+      max-width: 1400px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .carousel-track {
+      display: flex;
+      gap: 24px;
+      animation: slide 30s linear infinite;
+      width: fit-content;
+    }
+
+    .carousel-track:hover {
+      animation-play-state: paused;
+    }
+
+    .card {
+      flex: 0 0 300px;
+      background: #fff;
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      transition: transform 0.3s;
+    }
+
+    .carousel-wrapper {
+      display: flex;
+      justify-content: center;
+      
+    }
+
+    .stars {
+      color: #f8b400;
+      font-size: 20px;
+      margin-bottom: 12px;
+    }
+
+    .card h3 {
+      font-size: 18px;
+      margin-bottom: 12px;
+      font-weight: 600;
+      color: #333;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #666;
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+
+    .profile {
+      display: flex;
+      align-items: center;
+    }
+
+    .profile img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 16px;
+    }
+
+    .profile-info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .profile-info .name {
+      font-weight: 600;
+      font-size: 16px;
+      color: #222;
+    }
+
+    .profile-info .role {
+      font-size: 14px;
+      color: #999;
+    }
+
+    @keyframes slide {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    .duplicate {
+      display: flex;
+      gap: 24px;
+    }
+
+    /* Optional: Center 3 full + 2 half cards */
+    .carousel-mask {
+      width: 75%;
+      overflow: hidden;
+      padding: 30px 80px;
+    }
+
+    @media (max-width: 768px) {
+      .card {
+        flex: 0 0 80%;
+      }
+    }
+    .carousel-dots {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.carousel-dots .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 6px;
+  background-color: #f4cc59;
+  border-radius: 50%;
+  opacity: 0.4;
+  transition: opacity 0.3s ease;
+}
+
+.carousel-dots .dot.active {
+  opacity: 1;
+}
+@media(width<322px){
+    .header{
+        width: 100%;
+        max-width: fit-content;
+    }
+}

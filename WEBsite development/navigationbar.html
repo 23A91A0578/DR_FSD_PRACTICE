@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bar{
+            align-items: center;
+            justify-content: center;
+            width: 500px;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .one{
+            width: 100px;
+            background-color: black;
+            height: 10px;
+            transition: transform 4s ;
+            
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.703);
+        }
+        .two{
+             width: 100px;
+            background-color: black;
+            height: 10px;
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.703);
+        }
+        .three{
+            width: 100px;
+            background-color: black;
+            height: 10px;
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.703);
+        }
+            /*.one:hover{
+                rotate: 45deg;
+            }
+            .three:hover{
+                rotate: -45deg;
+            }
+            .two:hover{
+                display: none;
+            }
+                */
+            .bar:hover .one{
+                rotate: 45deg;
+                width: 80px;
+            }
+            .bar:hover .two{
+                rotate: -45deg;
+               width: 80px;
+            }
+            .bar:hover .three{
+                opacity: 0;
+            }
+            
+    </style>
+</head>
+<body>
+    <div class="bar">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+    </div>
+</body>
+</html>

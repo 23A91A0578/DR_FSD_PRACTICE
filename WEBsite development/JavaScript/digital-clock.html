@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exile&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <style>
+        body{
+            height: 100svh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: aliceblue;
+        }
+        /* .clock-background{
+             width: 220px;
+            height: 120px;
+            padding: 0px 30px;
+            background: radial-gradient(rgba(128, 128, 128, 0.9),rgba(5, 2, 10, 0.9));
+            /* box-shadow: 7px -7px 0px 1px rgba(0, 0, 0, 0.781); 
+            border-radius: 10px;
+            position: absolute;
+            z-index: -1;
+            top: 41.5svh;
+            left: 41svw;
+        } */
+        .clock{
+            box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+        }
+        .clock-layout{
+            width: 220px;
+            height: 120px;
+            padding: 0px 30px;
+            background: radial-gradient(gray,rgb(5, 2, 10));
+            box-shadow: 7px -7px 0px 1px rgba(0, 0, 0, 0.781);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .minutes{
+            width: 50%;
+            height: 70px;
+            color: rgb(219, 0, 0);
+            font-size: 48px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            font-family: 'Orbitron';
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            /* background-color: rgb(203, 201, 201); */
+            background: linear-gradient(to bottom, rgb(218, 218, 218), rgb(169, 169, 169));
+        }
+        .seconds{
+            width: 50%;
+            height: 70px;
+            color: rgb(219, 0, 0);
+            font-size: 48px;
+            font-weight: bold;
+            display: flex;
+            font-family: 'Orbitron';
+            padding-right: 20px;
+            align-items: center;
+            justify-content: start;
+            /* background-color: rgb(203, 201, 201); */
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            background: linear-gradient(to bottom, rgb(218, 218, 218), rgb(169, 169, 169));
+        }
+        .isto{
+            height: 70px;
+            color: rgb(219, 0, 0);
+            font-size: 44px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* background-color: rgb(203, 201, 201); */
+            background: linear-gradient(to bottom, rgb(218, 218, 218), rgb(169, 169, 169));
+        }
+    </style>
+</head>
+<body>
+    <div class="clock-background"></div>
+    <div class="clock">
+    <div class="clock-layout">
+        <div class="minutes"></div>
+        <div class="isto">:</div>
+        <div class="seconds"></div>
+    </div>
+    </div>
+    <script>
+        var time=600;
+        const clockTime=setInterval(function(){
+            time=time-1;
+            document.getElementsByClassName("minutes")[0].innerHTML=parseInt(time/60);
+            document.getElementsByClassName("seconds")[0].innerHTML=time%60;
+            if(time==0){
+
+                clearInterval(clockTime);
+                alert("Time is up");
+            }
+        },1000); 
+
+    </script>
+</body>
+</html>

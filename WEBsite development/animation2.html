@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            display: flex;
+            margin-top: 100px;
+        }
+        .pare{
+            width: 500px;
+            height: 500px;
+            transform-style: preserve-3d;
+            perspective: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 5px blue solid;
+        }
+        .one{
+            
+            width: 400px;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: tranform 6s linear;
+            background-color: black;
+            animation: dar 7s infinite;
+            color: aliceblue;
+        }
+
+       @keyframes dar {
+        0%{
+            transform: rotateY(0deg);
+        }
+        
+       100%{
+            transform: rotateY(180deg);
+            background-color: plum;
+
+       }
+    }
+    </style>
+</head>
+<body>
+    <div class="pare"><div class="one">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel, placeat ab. Blanditiis dolorem rerum accusantium iure sapiente ipsa velit fuga suscipit dicta illo amet porro, error pariatur odio nostrum animi!  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere necessitatibus quod nostrum. Molestiae eos ipsa quos quam, ratione omnis illum! Praesentium laudantium qui incidunt possimus rem fugiat autem, soluta dignissimos?  Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ad est praesentium beatae exercitationem quia et culpa! Sit, cumque sapiente dolores, id veniam ipsum nesciunt rerum repellat ratione, voluptate distinctio!</div>
+</div></body>
+</html>

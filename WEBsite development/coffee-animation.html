@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+        }
+        .container{
+            display: flex;
+            background-color: rgb(7, 82, 82);
+            width: 100%;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        .cup{
+            width: 270px;
+            height: 270px;
+            position: absolute;
+            background: linear-gradient(to right , rgb(243, 247, 251),rgb(190, 200, 210));
+            border-bottom-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+            border-top-left-radius: 25%;
+            border-top-right-radius: 25%;
+            z-index: 1;
+            box-shadow: 0px 10px 10px rgba(142, 139, 139, 0.571);
+        }
+        .top{
+            background-color: black;
+            width: 88%;
+            height: 60px;
+            position: absolute;
+            top: 2px;
+            left: 14px;
+            border-radius: 50%;
+            overflow: hidden;
+            background:  linear-gradient(to left , rgb(243, 247, 251),rgb(190, 200, 210));
+        }
+        .tea{
+            background: rgb(194,132,69);
+            width: 100%;
+            height: 48px;
+            position: absolute;
+            bottom: 0px;
+             border-radius: 50%;
+        }
+        .saucer{
+            width: 400px;
+            height: 200px;
+            background: linear-gradient(to bottom, rgb(243, 247, 251),rgb(142, 152, 161));
+            position: absolute;
+            border-radius: 50%;
+            bottom: 150px;
+            overflow: hidden;
+        }
+        .saucbot{
+            width: auto;
+            height: 50px;
+            overflow: hidden;
+            background: linear-gradient(to top, rgb(243, 247, 251),rgb(148, 156, 162));
+            border-radius: 50%;
+            margin-top: 170px;
+            z-index: 2;
+        }
+        .handle{
+            width: 100px;
+            height: 100px;
+            border-top: 15px solid  rgb(243, 247, 251);
+            border-bottom: 15px solid rgb(243, 247, 251);
+            border-right: 12px solid rgb(243, 247, 251);
+            border: linear-gradient(to right,rgb(243, 247, 251),rgb(190, 200, 210));
+            position: absolute;
+            border-bottom-right-radius: 50%;
+            border-top-right-radius: 50%;
+            position: absolute;
+            right: 555px;
+            bottom: 330px;
+            rotate: -10deg;
+            transform: skewX(-40deg);
+        }
+        .shadow{
+            background-color: rgb(245, 245, 245);
+            display: flex;
+             filter: blur(18px);
+            width: 10px;
+            height: 150px;
+            position: absolute;
+            top: 110px;
+            z-index: 6;
+            animation: shadowani 3s linear infinite;
+        }
+        .shadow2{
+            background-color: rgb(245, 245, 245);
+            display: flex;
+            width: 10px;
+     filter: blur(18px);
+            height: 150px;
+            position: absolute;
+            top: 110px;
+            left: 690px;
+            z-index: 6;
+            animation: shadowani 3s linear infinite;
+        }
+        .shadow3{
+             background-color: rgb(245, 245, 245);
+            display: flex;
+            width: 10px;
+            filter: blur(18px);
+            height: 150px;
+            position: absolute;
+            top: 110px;
+            left: 810px;
+            z-index: 6;
+            border-radius: ;
+            animation: shadowani 3s linear infinite;
+        }
+        @keyframes shadowani {
+        
+            0% {
+        transform: translateX(0) rotate(0deg);
+        opacity: 1;
+      }
+      25% {
+        transform: translateX(-10px) rotate(-10deg) translateY(-20px);
+        opacity: 0.8;
+      }
+      50% {
+        transform: translateX(10px) rotate(10deg) translateY(-30px);
+        opacity: 0.5;
+      }
+      75% {
+        transform: translateX(-5px) rotate(-5deg) translateY(-40px);
+        opacity: 0.3;
+      }
+      100% {
+        transform: translateX(0px) rotate(0deg) translateY(-50px);
+        opacity: 0;
+        
+      }
+    }
+            
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="shadow"></div>
+        <div class="shadow2"></div>
+        <div class="shadow3"></div>
+        <div class="cup">
+            <div class="top">
+                <div class="tea">
+
+                </div>
+            </div>
+        </div>
+        <div class="handle"></div>
+        <div class="saucer">
+            <div class="saucbot"></div>
+        </div>
+    </div>
+</body>
+</html>

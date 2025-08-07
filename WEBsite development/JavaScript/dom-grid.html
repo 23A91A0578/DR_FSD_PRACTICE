@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" required />
+    <input type="number" required />
+    <button onclick="fun()">Table</button>
+    <script>
+        function fun(){
+        var rows=document.getElementsByTagName("input")[0].value;
+        var cols=document.getElementsByTagName("input")[1].value;
+        let newEle=document.createElement("table");
+        let adres=document.getElementsByTagName("body")[0];
+        newEle.setAttribute("border","2px");
+        adres.appendChild(newEle);
+        console.log(rows);
+        
+        for(let i=0;i<rows;i++){
+            let r1=document.createElement("tr");
+            for(let j=0;j<cols;j++){
+                let c1=document.createElement("td");
+                r1.appendChild(c1);
+                c1.style="padding:20px";
+                if(i==0 && j==0){
+                c1.innerText="3,5";
+                }
+            }
+            newEle.appendChild(r1);
+        }
+        }
+    </script>
+</body>
+</html>

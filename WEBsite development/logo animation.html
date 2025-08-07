@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            align-self: center;
+        }
+        .one{
+            width: 400px;
+            height: 400px;
+            align-items: center;
+            align-self: center;
+            justify-self: center;
+            margin-top: 180px;
+            background: linear-gradient(yellow,red);
+            animation: roll 8s ease infinite;
+            transition: transform 5s ease;
+            overflow: auto;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+            border: 5px black;
+           
+        }
+        p{
+            display: flex;
+            color: aliceblue;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+            font-size: 30px;
+            justify-content: center;
+            justify-self: center;
+        }
+        @keyframes roll{
+            0%{
+                transform:  rotate(0deg) scale(0.2);
+            }
+            50%{
+                border-radius: 30%;
+                border: 5px black;
+                transform: rotate(-360deg) scale(1.1);
+            }
+            100%{
+                  border: 5px black;
+                transform: rotate(360deg)  scale(0.7);
+                border-radius: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="one"><p>CHANDU.COM</p></div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        console.log(window.screen);
+        function fun(event){
+            console.log(event);
+        }
+        function fun3(){
+            alert("Started scrolling!!!");
+        }
+        window.onresize=function(){
+            alert("Window resizing");
+        }
+    </script>
+</head>
+<body  onblur="fun(event)"></body>
+    <div class="hi" style="width: 100%;height: 200svh;"></div>
+    <button>Add to Cart</button>
+</body>
+</html>

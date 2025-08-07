@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cube Animation</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100svh;
+            background: radial-gradient(white,grey);
+            perspective: 500px;
+        }
+        .cube{
+            position: relative;
+            width: 200px;
+            height: 200px;
+            animation: mine 6s linear infinite;
+            transform-style: preserve-3d;
+        }
+        @keyframes mine {
+            100%{
+                transform: rotateX(360deg) rotateY(360deg);
+            }
+            
+        }
+        .cube > div{
+            width: 200px;
+            position: absolute;
+            height: 200px;
+            /*background: linear-gradient(to bottom,rgb(151, 5, 5),rgb(219, 80, 80));*/
+            
+            opacity: 0.92;
+            border-radius: 10px;
+            border: 2px white solid;
+        }
+        .left  > div{
+            border-radius: 7px;
+            width: 57px;
+            height: 57px;
+            background-color: yellow;
+        }
+        .right > div{
+            border-radius: 7px;
+            width: 57px;
+            height: 57px;
+            background-color: red;
+        }
+        .top >div{
+            border-radius: 7px;
+             width: 57px;
+            height: 57px;
+            background-color: blue;
+        }
+        .bottom > div{
+            border-radius: 7px;
+             width: 57px;
+            height: 57px;
+            background-color: green;
+        }
+        .front > div{
+            border-radius: 7px;
+             width: 57px;
+            height: 57px;
+            background-color: orange;
+        }
+        .back > div{
+            border-radius: 7px;
+             width: 57px;
+            height: 57px;
+            background-color: black;
+        }  
+        
+        
+        
+        .left{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            
+            background-color: white;
+            transform: rotateY(90deg) translateZ(100px);
+        }
+        .right{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            background-color: white;
+            transform: rotateY(90deg) translateZ(-100px);
+        }
+        .top{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            background-color: white;
+            transform: rotateX(90deg) translateZ(100px);
+        }
+        .bottom{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            background-color: white;
+            transform: rotateX(90deg) translateZ(-100px);
+        }
+        .front{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            background-color: white;
+            transform: translateZ(100px);
+        }
+        .back{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            background-color: white;
+            transform: translateZ(-100px);
+        }
+    </style>
+</head>
+<body>
+    <div class="cube">
+        <div class="left">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+            <div class="four"></div>
+            <div class="five"></div>
+            <div class="six"></div>
+            <div class="seven"></div>
+            <div class="eight"></div>
+            <div class="nine"></div>
+
+        </div>
+        <div class="right">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+            <div class="four"></div>
+            <div class="five"></div>
+            <div class="six"></div>
+            <div class="seven"></div>
+            <div class="eight"></div>
+            <div class="nine"></div>
+        </div>
+        <div class="top">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+            <div class="four"></div>
+            <div class="five"></div>
+            <div class="six"></div>
+            <div class="seven"></div>
+            <div class="eight"></div>
+            <div class="nine"></div>
+        </div>
+        <div class="bottom">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+            <div class="four"></div>
+            <div class="five"></div>
+            <div class="six"></div>
+            <div class="seven"></div>
+            <div class="eight"></div>
+            <div class="nine"></div>
+        </div>
+        <div class="front">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+            <div class="four"></div>
+            <div class="five"></div>
+            <div class="six"></div>
+            <div class="seven"></div>
+            <div class="eight"></div>
+            <div class="nine"></div>
+        </div>
+        <div class="back">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+            <div class="four"></div>
+            <div class="five"></div>
+            <div class="six"></div>
+            <div class="seven"></div>
+            <div class="eight"></div>
+            <div class="nine"></div>
+        </div>
+    </div>
+</body>
+</html>

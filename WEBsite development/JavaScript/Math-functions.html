@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        console.log(Math.min(1,10));
+        console.log(Math.max(10,100));
+        console.log(Math.pow(3,2));
+        var x=(`Random Number :${Math.floor(Math.random()*100)+100}`);
+        
+        for(let i=0;i<5;i++){
+        console.log(x);
+        }
+    </script>
+    <style>
+        #pro{
+            animation: blast 0.5s linear;
+        }
+        @keyframes blast {
+            0%{
+                scale: 3;
+            }
+            25%{
+                scale: 2.8;
+            }
+            50%{
+                scale: 2;
+            }
+            100%{
+                scale: 1;
+                
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <h1 id="pro">Hello</h1>
+    <script>
+        document.getElementById("pro").innerHTML=x;
+    </script>
+</body>
+</html>

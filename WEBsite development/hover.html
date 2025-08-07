@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one{
+            width: 400px;
+            height: 400px;
+            background-color: aqua;
+            position: relative;
+            transition: transform 1s ease;
+        }
+        .one:hover{
+            transform: translateX(500px);
+        }
+    
+        .two{
+            width: 400px;
+            height: 400px;
+            background-color: rgb(187, 255, 0);
+            position: relative;
+            right: 10px;
+            transition: transform 1s ease;
+        }
+        .two:hover{
+            transform: translateY(-500px);
+        }
+    </style>
+</head>
+<body>
+    <div class="one"></div>
+    <div class="two"></div>
+</body>
+</html>

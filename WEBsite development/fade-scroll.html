@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one,.two ,.three, .four{
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 500;
+            font-style: normal;
+            font-size: 30px;
+            line-height: 10vh;
+            padding: 500px;
+            animation: hello 5s both;
+            animation-timeline: view();
+            animation-range: entry 20% cover;
+        }
+        @keyframes hello {
+            0%{
+                opacity: 0;
+                transform: translateY(0px);
+                scale :0.5;
+            }
+            100%{
+                opacity: 1;
+                scale : 1;                
+                transform: translateY(100px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="one">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo soluta praesentium quisquam exercitationem, at, illum quidem velit non aperiam possimus libero nihil pariatur doloribus autem quis esse! Animi, ea quo!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, reprehenderit. Dignissimos adipisci, repellat, reiciendis placeat saepe nemo voluptas veritatis animi inventore et aliquam magnam veniam dolor rerum magni ut accusamus?
+    </div>
+    <div class="two">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias labore velit ex laudantium perspiciatis inventore fugiat, maiores dolore a eaque placeat, fuga corrupti culpa cum minima et delectus voluptate iure! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente quisquam repellendus ducimus perspiciatis voluptates quo magnam ratione amet hic recusandae iusto, qui ipsam expedita blanditiis nihil sint aperiam! Voluptas, cum!</div>
+    <div class="four">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ducimus necessitatibus quas deleniti voluptatem. Nihil, fugit. Aut incidunt numquam ea, ducimus sit vero, recusandae rerum velit ipsam architecto quae explicabo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, rem velit odit ut voluptatum, soluta ullam doloribus aspernatur repellendus placeat eius cum. Ipsum velit dignissimos, amet deleniti voluptatem consectetur ipsam.</div>
+<div class="three">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum aperiam fugit dignissimos ipsa dolores consequuntur ducimus excepturi ut voluptate, illo amet dolor asperiores libero ea commodi ratione ipsam nisi odio?  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat ad minus ut doloribus. Ut laudantium cumque consequuntur reprehenderit inventore, reiciendis ipsum possimus vero saepe, magni maiores culpa tempore fugit beatae!</div>
+
+</body>
+</html>

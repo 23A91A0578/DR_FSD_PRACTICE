@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Hello World</p>
+    <div class="demo">I am Sriram</div>
+   
+    <div id="uniq">Full Stack developement</div>
+    <img src="https://img.freepik.com/free-vector/flat-creativity-concept-illustration_52683-64279.jpg" alt="">
+    <button onclick="fun()">Click Me</button>
+
+    <script>
+        document.getElementsByTagName("button")[0].style="background-color:skyblue;border:none;padding:10px;font-weight:bold";
+        console.log(document.getElementsByTagName("p"));
+        console.log(document.getElementById("uniq"));
+        console.log(document.getElementsByClassName("demo"));
+        console.log(document.querySelector(".demo"));
+        function fun(){
+        document.querySelector("img").src="https://img.freepik.com/premium-vector/man-work-working-with-laptop_164911-91.jpg";
+        }
+    </script>
+</body>
+</html>

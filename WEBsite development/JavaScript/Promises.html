@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        function fun1(){
+          return new Promise(function(resolve){
+                setTimeout(function(){
+                    resolve(10);
+                },3000);
+            });
+        }
+    
+        function fun2(val){
+            return new Promise(function(resolve){
+                setTimeout(function(){
+                    resolve(val+1);
+                },1000);
+            });
+        };
+        function fun3(val){
+            return new Promise(function(resolve){
+                setTimeout(function(){
+                    resolve(val+1);
+                },2000);
+            });
+        };
+        // f1.then(function(res){
+        //     console.log("Fun-1 Completed");
+        //     fun2().then(function(){
+        //         console.log("Fun-2 Completed");
+        //         fun3().then(function(){
+        //             console.log("Fun-3 Completed");
+        //             setTimeout(function(){
+        //                 alert("Three funs completed");
+        //             },1500);
+        //         })
+        //     })
+            
+        // })
+        async function exec(){
+            const res1=await fun1();
+            const res2=await fun2(res1);
+            const res3=await fun3(res2);
+            console.log(res3);
+        }
+        exec();
+    </script>
+</body>
+</html>

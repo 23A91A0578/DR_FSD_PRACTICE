@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form>
+    <label>Username:
+      <input type="text" name="username">
+    </label><br><br>
+
+    <label>Password:
+      <input type="password" name="password">
+    </label><br><br>
+
+    <label>City of Employment:
+      <input type="text" name="city">
+    </label><br><br>
+
+    <label>Web server:
+      <select name="server">
+        <option>-- Choose a server --</option>
+        <option>Apache</option>
+        <option>Nginx</option>
+        <option>IIS</option>
+      </select>
+    </label><br><br>
+
+    <p>Please specify your role:</p>
+    <label><input type="radio" name="role" value="admin"> Admin</label><br>
+    <label><input type="radio" name="role" value="engineer"> Engineer</label><br>
+    <label><input type="radio" name="role" value="manager"> Manager</label><br>
+    <label><input type="radio" name="role" value="guest"> Guest</label><br><br>
+
+    <p>Single Sign-on to the following:</p>
+    <label><input type="checkbox" name="sso" value="mail"> Mail</label><br>
+    <label><input type="checkbox" name="sso" value="payroll"> Payroll</label><br>
+    <label><input type="checkbox" name="sso" value="selfservice"> Self-service</label><br><br>
+
+    <input type="submit" value="Login">
+    <input type="reset" value="Reset">
+  </form>
+</body>
+</html>
